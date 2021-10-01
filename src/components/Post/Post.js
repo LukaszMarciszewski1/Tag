@@ -1,11 +1,8 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import LinesEllipsis from 'react-lines-ellipsis'
-import { ContextPosts } from '../../store/ContextPosts'
 import './Post.scss'
 
 const Post = ({time, title, body, img}) => {
-  const { firstPost } = useContext(ContextPosts)
-  console.log(firstPost)
   return (
     <div className='post'>
       <div className='content'>

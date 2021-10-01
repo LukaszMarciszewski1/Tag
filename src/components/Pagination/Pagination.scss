@@ -1,0 +1,21 @@
+.nav-pagination{
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+  transform: translateY(-2px);
+  .pagination{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+      .page-item{
+        margin-right: 2rem;
+        &:last-child{
+          margin-right: 0;
+        }
+        button{
+          font-size: 1.5rem;
+          background-color: transparent;
+        }
+      }
+  }
+}

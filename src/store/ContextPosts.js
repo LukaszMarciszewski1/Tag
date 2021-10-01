@@ -4,16 +4,16 @@ import { data } from '../data'
 export const ContextPosts = createContext(null);
 
 const PostsProvider = ({ children }) => {
-  const [posts, setPosts] = useState([])
-  const [firstPost, setFirstPost] = useState({})
+  const [posts, setPosts] = useState(data.posts)
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true)
     setPosts(data.posts)
-    setFirstPost(data.posts[0])
   }, [])
 
 	return (
-		<ContextPosts.Provider value={{ posts, firstPost }}>
+		<ContextPosts.Provider value={{ posts, loading }}>
 			{children}
 		</ContextPosts.Provider>
 	);

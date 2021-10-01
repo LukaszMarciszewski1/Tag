@@ -1,0 +1,52 @@
+@import './breakpoints/breakpoints.scss';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  white-space: nowrap;
+  &:focus{
+    color: inherit;
+  }
+}
+
+p {
+  padding: 0;
+  line-height: 1.2rem;
+  @include mq(desktop) {
+    line-height: 1.5rem;
+  }
+}
+
+button {
+  border: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}

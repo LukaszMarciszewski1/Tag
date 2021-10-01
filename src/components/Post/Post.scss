@@ -1,0 +1,58 @@
+@import '../../breakpoints/breakpoints.scss';
+.post {
+  padding: 0 1rem;
+  max-width: 1000px;
+  .content {
+    display: flex;
+    border-bottom: 1px solid grey;
+    padding: 1rem 0;
+    .img-container {
+      width: 150px;
+      min-width: 150px;
+      margin-right: .8rem;
+    }
+    .text-container {
+      .title {
+        font-size: 1.1rem;
+        padding-top: 0.3rem;
+      }
+      .time {
+        color: grey;
+        font-size: 0.8rem;
+      }
+      .body {
+        display: none;
+        line-height: 1.1rem;
+        @include mq(tablet) {
+          display: inline;
+        }
+      }
+    }
+  }
+
+  &:first-child {
+    padding: 0;
+    .content {
+      flex-direction: column;
+      border-bottom: none;
+    }
+    .img-container {
+      width: 100%;
+      margin-right: 0;
+    }
+    .text-container {
+      padding: 1rem 1rem 0 1rem;
+      .title {
+        font-size: 1.4rem;
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+      }
+      .time {
+        font-size: 1rem;
+      }
+      .body {
+        display: inline;
+      }
+    }
+  }
+}

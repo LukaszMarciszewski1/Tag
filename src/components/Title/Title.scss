@@ -1,10 +1,11 @@
 @import '../../breakpoints/breakpoints.scss';
 
-.container {
+.titleWraper {
   padding: 1rem;
   margin-bottom: 1rem;
   @include mq(desktop) {
     max-width: 1000px;
+    padding: 1rem 3rem;
   }
   .box {
     display: flex;
@@ -26,11 +27,11 @@
       border-top: 15px solid transparent;
       border-left: 25px solid black;
       border-bottom: 15px solid transparent;
-      padding-right: 1rem;
+      padding-right: 10px;
       @include mq(tablet) {
-        border-top: 20px solid transparent;
-        border-left: 30px solid black;
-        border-bottom: 20px solid transparent;
+        border-top: 16px solid transparent;
+        border-left: 26px solid black;
+        border-bottom: 16px solid transparent;
       }
     }
   }

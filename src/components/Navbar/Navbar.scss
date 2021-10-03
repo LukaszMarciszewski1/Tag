@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: .5rem 1rem;
 }
 
 .social-media {
@@ -156,7 +156,7 @@
 .breadcrumbs {
   padding: 1rem;
   @include mq(desktop) {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 3rem;
   }
   ul {
     display: flex;

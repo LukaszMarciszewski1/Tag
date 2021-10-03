@@ -1,0 +1,47 @@
+@import '../../breakpoints/breakpoints.scss';
+
+.entries {
+  width: 100%;
+  min-width: 100%;
+  background-color: #e08e33;
+  padding: 1.5rem 1rem;
+  .title {
+    display: flex;
+    align-items: center;
+    h2{
+      color: white;
+    }
+    .triangle {
+      width: 0;
+      height: 0;
+      border-top: 12px solid transparent;
+      border-left: 22px solid white;
+      border-bottom: 12px solid transparent;
+      padding-right: 10px;
+      @include mq(tablet) {
+        border-top: 16px solid transparent;
+        border-left: 26px solid white;
+        border-bottom: 16px solid transparent;
+      }
+    }
+  }
+
+  .content{
+    margin-top: 1rem;
+    .entry{
+      color: white;
+      padding: 1.5rem 0;
+      border-bottom: 2px solid white;
+      &:last-child{
+        padding:1rem 0 0;
+        border-bottom: none;
+      }
+      span{
+        font-size: 1.05rem;
+        padding-bottom: .5rem;
+        display: inline-block;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

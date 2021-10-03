@@ -3,7 +3,7 @@ import './Title.scss'
 
 const Title = ({text}) => {
   return (
-    <div className='container'>
+    <div className='titleWraper'>
       <div className='box'>
         <div className='triangle'></div>
         <h1>{text}</h1>

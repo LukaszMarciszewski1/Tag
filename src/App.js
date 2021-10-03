@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import ContextPostsProvider from './store/ContextPosts'
+import ContextPostsProvider from './context/ContextPosts'
 import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home'
 import Tag from './pages/Tag'

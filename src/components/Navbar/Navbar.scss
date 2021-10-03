@@ -5,6 +5,10 @@
 .navbar {
   display: flex;
   flex-direction: column;
+  // position: sticky;
+  width: 100%;
+  // left: 0;
+  // top: 0;
 }
 
 .top-bar {
@@ -44,6 +48,9 @@
         height: 30px;
         padding-right: 8px;
       }
+    }
+    &:hover {
+      opacity: .8;
     }
   }
 }
@@ -146,30 +153,35 @@
         font-weight: bold;
         color: white;
         &:hover {
-          color: brown;
+          opacity: .8;
         }
       }
     }
   }
 }
 
-.breadcrumbs {
-  padding: 1rem;
-  @include mq(desktop) {
-    padding: 1.5rem 3rem;
-  }
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 1.1rem;
-    @include mq(desktop) {
-      font-size: 1.2rem;
-    }
-  }
-  li {
-    padding: 0 1rem;
-    &:first-child {
-      padding: 0 1rem 0 0;
-    }
-  }
-}
+// .breadcrumbs {
+//   padding: 1rem;
+//   @include mq(desktop) {
+//     padding: 1.5rem 3rem;
+//   }
+//   ul {
+//     display: flex;
+//     flex-wrap: wrap;
+//     font-size: 1.1rem;
+//     @include mq(desktop) {
+//       font-size: 1.2rem;
+//     }
+//   }
+//   li {
+//     padding: 0 1rem;
+//     &:first-child {
+//       padding: 0 1rem 0 0;
+//     }
+//     a{
+//       &:focus{
+//         color: rgb(170, 170, 170);
+//       }
+//     }
+//   }
+// }

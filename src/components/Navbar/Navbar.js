@@ -58,7 +58,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className='breadcrumbs'>
+      {/* <div className='breadcrumbs'>
         <ul>
           <li>
             <Link to='/'>Strona główna</Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
             <Link to='/Tag'>Tag</Link>
           </li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   )
 }

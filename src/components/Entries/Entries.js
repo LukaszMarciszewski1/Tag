@@ -11,27 +11,27 @@ const Entries = () => {
       <div className='content'>
         <div className='entry'>
           <span>wiadomości</span>
-          <h3>
+          <h4>
             Premier: Szpitale tymczasowe potrzebnym elementem leczenia COVID-19
-          </h3>
+          </h4>
         </div>
         <div className='entry'>
           <span>wiadomości</span>
-          <h3>
+          <h4>
             Premier: Szpitale tymczasowe potrzebnym elementem leczenia COVID-19
-          </h3>
+          </h4>
         </div>
         <div className='entry'>
           <span>wiadomości</span>
-          <h3>
+          <h4>
             Premier: Szpitale tymczasowe potrzebnym elementem leczenia COVID-19
-          </h3>
+          </h4>
         </div>
         <div className='entry'>
           <span>wiadomości</span>
-          <h3>
+          <h4>
             Premier: Szpitale tymczasowe potrzebnym elementem leczenia COVID-19
-          </h3>
+          </h4>
         </div>
       </div>
     </div>

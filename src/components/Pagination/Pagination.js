@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import { FaArrowLeft } from 'react-icons/fa'
 import { FaArrowRight } from 'react-icons/fa'
 import './Pagination.scss'
@@ -7,7 +7,7 @@ const Pagination = ({
   currentPage,
   maxPostsPerPage,
   totalPosts,
-  paginate,
+  handleSelectNumberPagination,
   handleBtnArrowPagination,
   maxPageNumberLimit,
   minPageNumberLimit,
@@ -17,75 +17,166 @@ const Pagination = ({
   for (let i = 1; i <= Math.ceil(totalPosts / maxPostsPerPage); i++) {
     pageNumbers.push(i)
   }
-
-  const renderPageNumbers = pageNumbers.map((number) => {
-    if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
-      return (
-        <li key={number} className='pagination-item'>
-          <button
-            onClick={() => paginate(number)}
-            className={`pagination-link ${
-              number === currentPage ? 'active' : ''
-            }`}
-          >
-            {number}
-          </button>
-        </li>
-      )
-    } else {
-      return null
-    }
-  })
-
-  let pageIncrementBtn = null
-  if (totalPosts > maxPageNumberLimit) {
-    pageIncrementBtn = (
-      <li className='pagination-item'>
+  
+  const pageNumberOfList = [...pageNumbers].slice(0, -1)
+  const lastNumberOfList = [...pageNumbers].length
+ 
+  const renderPageNumbers = (
+    <>
+      {[...pageNumbers].map((number) => {
+        if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
+          return (
+            <button
+              key={number}
+              onClick={() => handleSelectNumberPagination(number)}
+              className={`pagination-link ${
+                number === currentPage ? 'active' : ''
+              }`}
+            >
+              {number}
+            </button>
+          )
+        } else {
+          return null
+        }
+      })}
+      {currentPage === pageNumberOfList.length ||
+      currentPage === lastNumberOfList ? (
+        ''
+      ) : (
+        <button className='pagination-link'>...</button>
+      )}
+      
       <button
-        onClick={handleBtnArrowPagination}
-        className={`pagination-link`}
+        onClick={() => handleSelectNumberPagination(lastNumberOfList)}
+        className={`pagination-link ${
+          currentPage === lastNumberOfList ? 'active' : ''
+        }`}
       >
-        &hellip;
+        {lastNumberOfList}
       </button>
-    </li>
-    )
-  }
-
-  let pageDecrementBtn = null
-  if (minPageNumberLimit >= 1) {
-    pageDecrementBtn = (
-      <li className='pagination-item'>
-      <button
-        onClick={handleBtnArrowPagination}
-        className={`pagination-link`}
-      >
-        &hellip;
-      </button>
-    </li>
-    )
-  }
+    </>
+  )
+  // useEffect(() => {
+  //  console.log(pageNumbers)
+  //  console.log(lastNumberOfList)
+  // },[pageNumberOfList])
 
   return (
     <nav className='nav-pagination'>
-      <ul className='pagination'>
-        <button 
-        onClick={() => handleBtnArrowPagination('prev')}
-        disabled={currentPage == 1 ? true : false}
+      <div className='pagination'>
+        <button
+          className='arrow-btn'
+          onClick={() => handleBtnArrowPagination('prev')}
+          disabled={currentPage == pageNumbers[0] ? true : false}
         >
           <FaArrowLeft />
         </button>
-        {pageIncrementBtn}
         {renderPageNumbers}
-        {pageDecrementBtn}
-        <button 
-        onClick={() => handleBtnArrowPagination('next')}
-        disabled={currentPage == totalPosts - 1 ? true : false}
+        <button
+          className='arrow-btn'
+          onClick={() => handleBtnArrowPagination('next')}
+          disabled={currentPage == pageNumbers.length ? true : false}
         >
           <FaArrowRight />
         </button>
-      </ul>
+      </div>
     </nav>
   )
 }
 
 export default Pagination
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useEffect } from 'react'
+// import { FaArrowLeft } from 'react-icons/fa'
+// import { FaArrowRight } from 'react-icons/fa'
+// import './Pagination.scss'
+
+// const Pagination = ({
+//   currentPage,
+//   maxPostsPerPage,
+//   totalPosts,
+//   handleSelectNumberPagination,
+//   handleBtnArrowPagination,
+//   maxPageNumberLimit,
+//   minPageNumberLimit,
+// }) => {
+//   const pageNumbers = []
+
+//   for (let i = 1; i <= Math.ceil(totalPosts / maxPostsPerPage); i++) {
+//     pageNumbers.push(i)
+//   }
+//   const pageNumberOfList = [...pageNumbers].slice(0, -1)
+//   const lastNumberOfList = pageNumbers.pop()
+//   const el = [...pageNumberOfList].push(lastNumberOfList)
+//   const renderPageNumbers = (
+//     <>
+//       {pageNumberOfList.map((number) => {
+//         if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
+//           console.log(number)
+//           return (
+//             <button
+//               onClick={() => handleSelectNumberPagination(number)}
+//               className={`pagination-link ${
+//                 number === currentPage ? 'active' : ''
+//               }`}
+//             >
+//               {number}
+//             </button>
+//           )
+//         } else {
+//           return null
+//         }
+//       })}
+//       <button className='pagination-link'>...</button>
+//       <button
+//         onClick={() => handleSelectNumberPagination(el)}
+//         className={`pagination-link ${
+//           currentPage === el ? 'active' : ''
+//         }`}
+//       >
+//         {el}
+//       </button>
+//     </>
+//   )
+//   useEffect(() => {
+//    console.log(pageNumbers)
+//    console.log(currentPage)
+//   },[pageNumberOfList])
+
+//   return (
+//     <nav className='nav-pagination'>
+//       <div className='pagination'>
+//         <button
+//           className='arrow-btn'
+//           onClick={() => handleBtnArrowPagination('prev')}
+//           disabled={currentPage == pageNumbers[0] ? true : false}
+//         >
+//           <FaArrowLeft />
+//         </button>
+//         {renderPageNumbers}
+//         <button
+//           className='arrow-btn'
+//           onClick={() => handleBtnArrowPagination('next')}
+//           disabled={currentPage == pageNumbers.length + 1 ? true : false}
+//         >
+//           <FaArrowRight />
+//         </button>
+//       </div>
+//     </nav>
+//   )
+// }
+
+// export default Pagination

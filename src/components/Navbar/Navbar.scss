@@ -1,33 +1,25 @@
-@import '../../breakpoints/breakpoints.scss';
-
-// $padding-desktop:
+@import '../../scss/utils.scss';
 
 .navbar {
   display: flex;
   flex-direction: column;
-  // position: sticky;
   width: 100%;
-  // left: 0;
-  // top: 0;
 }
-
 .top-bar {
   display: flex;
   flex-direction: column;
-  background-color: brown;
+  background-color: $red;
   @include mq(desktop) {
     flex-direction: row-reverse;
     padding: 0 1rem;
   }
 }
-
-.wrapper {
+.top-bar-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: .5rem 1rem;
 }
-
 .social-media {
   display: flex;
   li {
@@ -41,7 +33,7 @@
     a {
       display: flex;
       align-items: center;
-      color: white;
+      color: $white;
       font-size: 1.1rem;
       svg {
         width: 30px;
@@ -54,16 +46,16 @@
     }
   }
 }
-
 .logo {
   width: 100%;
   font-size: 2rem;
-  color: white;
+  color: $white;
   text-transform: uppercase;
-  background-color: black;
+  background-color: $dark;
   padding: 1rem;
   letter-spacing: 0.2rem;
   text-align: center;
+  cursor: pointer;
   @include mq(tablet) {
     text-align: left;
   }
@@ -72,7 +64,6 @@
     font-size: 3rem;
   }
 }
-
 .hamburger {
   display: flex;
   cursor: pointer;
@@ -93,7 +84,7 @@
     @mixin hamburger-content {
       width: 100%;
       height: 3px;
-      background-color: white;
+      background-color: $white;
       position: absolute;
     }
     span {
@@ -117,7 +108,6 @@
     }
   }
 }
-
 .hamburger--active {
   div {
     span {
@@ -131,57 +121,46 @@
     }
   }
 }
-
 .navigation {
-  display: none;
+  display: flex;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  padding: .5rem;
+  @include mq(tablet) {
+    justify-content: flex-end;
+  }
   @include mq(desktop) {
-    padding: 0.5rem 3rem;
-    display: flex;
     justify-content: flex-start;
-    background-color: black;
+    background: $dark;
+    padding: 0;
   }
   ul {
+    position: relative;
     display: flex;
+    flex-direction: column;
+    @include mq(desktop) {
+      flex-direction: row;
+    }
     li {
-      margin-right: 3rem;
-      padding: 0.5rem;
-      &:last-child {
-        margin-right: 0;
-      }
+      padding: 1.2rem 0;
       a {
-        font-size: 1.5rem;
+        padding: 1.2rem 2.5rem;
+        font-size: 1.2rem;
         font-weight: bold;
-        color: white;
+        color: $white;
+        white-space: nowrap;
+        transition: .2s;
         &:hover {
-          opacity: .8;
+          opacity: .7;
+        }
+        @include mq(desktop) {
+          font-size: 1.2rem;
+          &:hover {
+            background-color: $light-grey;
+            opacity: 1;
+          }
         }
       }
     }
   }
 }
-
-// .breadcrumbs {
-//   padding: 1rem;
-//   @include mq(desktop) {
-//     padding: 1.5rem 3rem;
-//   }
-//   ul {
-//     display: flex;
-//     flex-wrap: wrap;
-//     font-size: 1.1rem;
-//     @include mq(desktop) {
-//       font-size: 1.2rem;
-//     }
-//   }
-//   li {
-//     padding: 0 1rem;
-//     &:first-child {
-//       padding: 0 1rem 0 0;
-//     }
-//     a{
-//       &:focus{
-//         color: rgb(170, 170, 170);
-//       }
-//     }
-//   }
-// }

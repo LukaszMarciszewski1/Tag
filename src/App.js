@@ -1,31 +1,31 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import ContextPostsProvider from './context/ContextPosts'
-import Navbar from './components/Navbar/Navbar'
-import Layout from './components/Layout'
 import Home from './pages/Home'
 import Tag from './pages/Tag'
 import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs'
-
-import './app.scss'
+import Navbar from './components/Navbar/Navbar'
+import Layout from './components/Layout'
+import Footer from './components/Footer/Footer'
 
 function App() {
   return (
     <Router>
       <Navbar />
-        <Layout>
+      <Layout>
         <Breadcrumbs />
-          <Switch>
-            <Route exact path='/'>
-              <Home />
+        <Switch>
+          <Route exact path='/'>
+            <Home />
+          </Route>
+          <ContextPostsProvider>
+            <Route path='/Tag'>
+              <Tag />
             </Route>
-            <ContextPostsProvider>
-              <Route path='/Tag'>
-                <Tag />
-              </Route>
-            </ContextPostsProvider>
-          </Switch>
-        </Layout>
-      </Router>
+          </ContextPostsProvider>
+        </Switch>
+      </Layout>
+      <Footer/>
+    </Router>
   )
 }
 

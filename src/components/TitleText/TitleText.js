@@ -1,7 +1,7 @@
 import React from 'react'
-import './Title.scss'
+import './TitleText.scss'
 
-const Title = ({text}) => {
+const TitleText = ({text}) => {
   return (
     <div className='titleWraper'>
       <div className='box'>
@@ -35,4 +35,4 @@ const Title = ({text}) => {
   )
 }
 
-export default Title
+export default TitleText

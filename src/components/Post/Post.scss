@@ -1,13 +1,18 @@
-@import '../../breakpoints/breakpoints.scss';
+@import '../../scss/utils.scss';
+
 .post {
   padding: 0 1rem;
   @include mq(desktop){
-    padding: 0 3rem;
+    padding: 0 2.5rem;
   };
   .content {
     display: flex;
-    border-bottom: 1px solid grey;
-    padding: 1rem 0;
+    border-bottom: 1px solid $light-grey;
+    padding: 1.4rem 0;
+    cursor: pointer;
+    a:hover .title{
+      color: $red;
+    }
     .img-container {
       max-width: 150px;
       min-width: 150px;
@@ -18,7 +23,7 @@
         margin-right: 1rem;
       }
       @include mq(desktop) {
-        max-width: 300px;
+        max-width: 320px;
       }
     }
     .text-container {
@@ -26,48 +31,49 @@
         font-size: 1.1rem;
         padding-top: 0.2rem;
         display: inline-block;
+        color: $dark;
+        transition: .2s;
         @include mq(tablet) {
           font-size: 1.5rem;
           padding-bottom: .5rem;
         }
+        @include mq(desktop) {
+          font-size: 1.9rem;
+        }
       }
       .time {
-        color: grey;
+        color: $light-grey;
         font-size: 0.9rem;
       }
       .body {
         display: none;
+        color: $dark;
         @include mq(tablet) {
           display: inline-block;
-          span{
-            line-height: 1.2rem;
-          }
         }
       }
     }
   }
-
   &:first-child {
     padding: 0;
     @include mq(desktop){
-      padding: 0 3rem;
+      padding: 0 2.5rem;
     };
     .content {
       flex-direction: column;
       border-bottom: none;
       @include mq(desktop) {
-        border-bottom: 1px solid grey;
+        border-bottom: 1px solid $light-grey;
         flex-direction: row;
       }
     }
     .img-container {
       width: 100%;
-      // min-width: 100%;
       max-width: 100%;
       margin-right: 0;
       @include mq(desktop) {
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 320px;
+        min-width: 320px;
         margin-right: 1rem;
       }
     }
@@ -84,8 +90,9 @@
           font-size: 2.5rem;
         }
         @include mq(desktop) {
-          font-size: 1.5rem;
+          font-size: 1.9rem;
           padding-bottom: .5rem;
+          padding-top: 0.2rem;
         }
       }
       .time {

@@ -1,10 +1,11 @@
 import React from 'react'
-import Title from '../components/Title/Title'
+import TitleText from '../components/TitleText/TitleText'
+import './Home.scss'
 
 const Home = () => {
   return (
-    <main>
-        <Title text='Strona główna'/>
+    <main className='home'>
+        <TitleText text='Strona główna'/>
     </main>
   )
 }

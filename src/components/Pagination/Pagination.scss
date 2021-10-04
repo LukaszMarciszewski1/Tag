@@ -1,31 +1,56 @@
-.nav-pagination {
+@import '../../scss/utils.scss';
+
+.paginationBttns {
   width: 100%;
-  padding: 1.5rem;
-  background-color: white;
+  padding: 1.5rem 1rem 3rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translateY(-2px);
-  margin-bottom: 100px;
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    .pagination-link {
-      font-size: 1.2rem;
-      background-color: transparent;
-      margin-right: 1rem;
-      padding: .5rem 1rem;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-    .active {
-      background-color: grey;
-      color: white;
-      border-radius: 5px;
-    }
+  background-color: $white;
+  @include mq(tablet) {
+    padding: 3rem 1rem;
   }
-  .arrow-btn {
+}
+.paginationBttns a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  margin: 4px;
+  border-radius: 5px;
+  color: $dark;
+  cursor: pointer;
+  &:focus{
+    color: $white;
+    background-color: $dark;
+  }
+  &:hover{
+    color: $white;
+    background-color: $dark;
+  }
+  @include mq(tablet) {
+    margin: 8px;
+    padding: 6px 12px;
+  }
+}
+.paginationBttns a:hover {
+  color: $white;
+  background-color: $dark;
+}
+.paginationActive a {
+  color: $white;
+  background-color: $dark;
+}
+.paginationDisabled a {
+  color: rgb(163, 163, 163);
+  background-color: transparent;
+  &:focus{
+    color: rgb(163, 163, 163);
     background-color: transparent;
-    padding: .5rem;
-    margin: 0 1rem;
+  }
+  &:hover{
+    background-color: transparent;
   }
 }

@@ -1,0 +1,28 @@
+//colors
+$white: white;
+$dark-grey: #262626;
+$light-grey: #404040;
+$dark: #000;
+$orange: #e08e33;
+$red: #d25e49;
+
+//breakpoints
+$breakpoints: (
+  tablet: (
+    min-width: 500px,
+  ),
+  desktop: (
+    min-width: 1000px,
+  ),
+);
+
+@mixin mq($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+  @if ($size) {
+    @media #{$size} {
+      @content;
+    }
+  } @else {
+    @error '"#{$breakpoint}" - error';
+  }
+}

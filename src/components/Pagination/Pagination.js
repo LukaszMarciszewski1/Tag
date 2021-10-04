@@ -1,87 +1,31 @@
-import React, { useEffect } from 'react'
+import React from 'react'
+import ReactPaginate from 'react-paginate'
 import { FaArrowLeft } from 'react-icons/fa'
 import { FaArrowRight } from 'react-icons/fa'
 import './Pagination.scss'
 
 const Pagination = ({
-  currentPage,
-  maxPostsPerPage,
   totalPosts,
-  handleSelectNumberPagination,
-  handleBtnArrowPagination,
-  maxPageNumberLimit,
-  minPageNumberLimit,
+  maxPostsPerPage,
+  changePage,
 }) => {
-  const pageNumbers = []
-
-  for (let i = 1; i <= Math.ceil(totalPosts / maxPostsPerPage); i++) {
-    pageNumbers.push(i)
-  }
   
-  const pageNumberOfList = [...pageNumbers].slice(0, -1)
-  const lastNumberOfList = [...pageNumbers].length
- 
-  const renderPageNumbers = (
-    <>
-      {[...pageNumbers].map((number) => {
-        if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
-          return (
-            <button
-              key={number}
-              onClick={() => handleSelectNumberPagination(number)}
-              className={`pagination-link ${
-                number === currentPage ? 'active' : ''
-              }`}
-            >
-              {number}
-            </button>
-          )
-        } else {
-          return null
-        }
-      })}
-      {currentPage === pageNumberOfList.length ||
-      currentPage === lastNumberOfList ? (
-        ''
-      ) : (
-        <button className='pagination-link'>...</button>
-      )}
-      
-      <button
-        onClick={() => handleSelectNumberPagination(lastNumberOfList)}
-        className={`pagination-link ${
-          currentPage === lastNumberOfList ? 'active' : ''
-        }`}
-      >
-        {lastNumberOfList}
-      </button>
-    </>
-  )
-  // useEffect(() => {
-  //  console.log(pageNumbers)
-  //  console.log(lastNumberOfList)
-  // },[pageNumberOfList])
+  const pageCount = Math.ceil(totalPosts / maxPostsPerPage)
 
   return (
-    <nav className='nav-pagination'>
-      <div className='pagination'>
-        <button
-          className='arrow-btn'
-          onClick={() => handleBtnArrowPagination('prev')}
-          disabled={currentPage == pageNumbers[0] ? true : false}
-        >
-          <FaArrowLeft />
-        </button>
-        {renderPageNumbers}
-        <button
-          className='arrow-btn'
-          onClick={() => handleBtnArrowPagination('next')}
-          disabled={currentPage == pageNumbers.length ? true : false}
-        >
-          <FaArrowRight />
-        </button>
-      </div>
-    </nav>
+    <ReactPaginate
+    previousLabel={<FaArrowLeft />}
+    nextLabel={<FaArrowRight />}
+    pageCount={pageCount}
+    onPageChange={changePage}
+    pageRangeDisplayed={3}
+    marginPagesDisplayed={1}
+    containerClassName={'paginationBttns'}
+    previousLinkClassName={'previousBttn'}
+    nextLinkClassName={'nextBttn'}
+    disabledClassName={'paginationDisabled'}
+    activeClassName={'paginationActive'}
+  />
   )
 }
 
@@ -99,78 +43,72 @@ export default Pagination
 
 
 
-// import React, { useEffect } from 'react'
+
+
+// import React, { useState, useEffect } from 'react'
 // import { FaArrowLeft } from 'react-icons/fa'
 // import { FaArrowRight } from 'react-icons/fa'
 // import './Pagination.scss'
 
 // const Pagination = ({
 //   currentPage,
-//   maxPostsPerPage,
-//   totalPosts,
+//   totalPages,
 //   handleSelectNumberPagination,
-//   handleBtnArrowPagination,
-//   maxPageNumberLimit,
-//   minPageNumberLimit,
+//   pageNumberLimit,
+//   // maxPageNumber,
+//   // minPageNumber
+//   // arrOfCurrentPages,
 // }) => {
+
+//   const [arrOfCurrentPages, setArrOfCurrentPages] = useState([])
+//   const [maxPageNumber, setMaxPageNumber] = useState(5)
+//   const [minPageNumber, setMinPageNumber] = useState(0)
 //   const pageNumbers = []
 
-//   for (let i = 1; i <= Math.ceil(totalPosts / maxPostsPerPage); i++) {
+//   for (let i = 1; i <= totalPages; i++) {
 //     pageNumbers.push(i)
 //   }
-//   const pageNumberOfList = [...pageNumbers].slice(0, -1)
-//   const lastNumberOfList = pageNumbers.pop()
-//   const el = [...pageNumberOfList].push(lastNumberOfList)
-//   const renderPageNumbers = (
-//     <>
-//       {pageNumberOfList.map((number) => {
-//         if (number < maxPageNumberLimit + 1 && number > minPageNumberLimit) {
-//           console.log(number)
-//           return (
-//             <button
-//               onClick={() => handleSelectNumberPagination(number)}
-//               className={`pagination-link ${
-//                 number === currentPage ? 'active' : ''
-//               }`}
-//             >
-//               {number}
-//             </button>
-//           )
-//         } else {
-//           return null
-//         }
-//       })}
-//       <button className='pagination-link'>...</button>
-//       <button
-//         onClick={() => handleSelectNumberPagination(el)}
-//         className={`pagination-link ${
-//           currentPage === el ? 'active' : ''
-//         }`}
+
+//   const renderNumberOfPages = arrOfCurrentPages.map((page) => {
+//       return(
+//         <>
+//         <button
+//         key={page}
+//         className={`pagination-link ${currentPage === page ? 'active' : ''}`}
+//         onClick={() => handleSelectNumberPagination(page)}
 //       >
-//         {el}
+//         {page}
 //       </button>
-//     </>
-//   )
-//   useEffect(() => {
-//    console.log(pageNumbers)
-//    console.log(currentPage)
-//   },[pageNumberOfList])
+//       </>
+//       )
+
+//   })
+
+//   useEffect(()=>{
+    
+//    let tempNumberOfPages = [...pageNumbers]
+//    const sliced = pageNumbers.slice(0, maxPageNumber)
+//    if(currentPage <= maxPageNumber - 1){
+//      tempNumberOfPages = [...sliced, '...', pageNumbers.length]
+//    }
+//    setArrOfCurrentPages(tempNumberOfPages)
+//   }, [currentPage])
 
 //   return (
 //     <nav className='nav-pagination'>
 //       <div className='pagination'>
 //         <button
 //           className='arrow-btn'
-//           onClick={() => handleBtnArrowPagination('prev')}
-//           disabled={currentPage == pageNumbers[0] ? true : false}
+//           onClick={() => handleSelectNumberPagination((prev) => prev - 1)}
+//           disabled={currentPage === 1 ? true : false}
 //         >
 //           <FaArrowLeft />
 //         </button>
-//         {renderPageNumbers}
+//         {renderNumberOfPages}
 //         <button
 //           className='arrow-btn'
-//           onClick={() => handleBtnArrowPagination('next')}
-//           disabled={currentPage == pageNumbers.length + 1 ? true : false}
+//           onClick={() => handleSelectNumberPagination((prev) => prev + 1)}
+//           disabled={currentPage === pageNumbers.length ? true : false}
 //         >
 //           <FaArrowRight />
 //         </button>

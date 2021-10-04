@@ -1,36 +1,50 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import './Navbar.scss'
+import { categories } from '../../data'
+
 import { FaFacebookSquare } from 'react-icons/fa'
 import { FaTwitterSquare } from 'react-icons/fa'
+import './Navbar.scss'
 
 const Navbar = () => {
-  const [hamburgerIsActive, setHamburgerIsActive] = useState(false)
-  const toggleHamburger = () => setHamburgerIsActive((active) => !active)
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  const handleToggleMenu = () => setToggleMenu((active) => !active)
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth)
+    }
+
+    window.addEventListener('resize', changeWidth)
+
+    return () => {
+      window.removeEventListener('resize', changeWidth)
+    }
+  }, [])
 
   return (
     <nav className='navbar'>
       <div className='top-bar'>
-        <div className='wrapper'>
+        <div className='top-bar-wrapper'>
           <ul className='social-media'>
             <li>
-              <Link to='/'>
+              <Link to='#!' rel='noopener noreferrer' target='_blank'>
                 <FaTwitterSquare />
                 Twitter
               </Link>
             </li>
             <li>
-              <Link to='/'>
+              <Link to='#!' rel='noopener noreferrer' target='_blank'>
                 <FaFacebookSquare />
                 Facebook
               </Link>
             </li>
           </ul>
           <button
-            className={`hamburger ${
-              hamburgerIsActive ? 'hamburger--active' : ''
-            }`}
-            onClick={toggleHamburger}
+            className={`hamburger ${toggleMenu ? 'hamburger--active' : ''}`}
+            onClick={handleToggleMenu}
           >
             <div>
               <span></span>
@@ -39,36 +53,17 @@ const Navbar = () => {
         </div>
         <h3 className='logo'>Logo Test</h3>
       </div>
-      <div className='navigation'>
-        <ul>
-          <li>
-            <Link to='/'>Kategoria 1</Link>
-          </li>
-          <li>
-            <Link to='/'>Kategoria 2</Link>
-          </li>
-          <li>
-            <Link to='/'>Kategoria 3</Link>
-          </li>
-          <li>
-            <Link to='/'>Kategoria 4</Link>
-          </li>
-          <li>
-            <Link to='/'>Kategoria 5</Link>
-          </li>
-        </ul>
-      </div>
-      {/* <div className='breadcrumbs'>
-        <ul>
-          <li>
-            <Link to='/'>Strona główna</Link>
-          </li>
-          <div>/</div>
-          <li>
-            <Link to='/Tag'>Tag</Link>
-          </li>
-        </ul>
-      </div> */}
+      {(toggleMenu || screenWidth > 1000) && (
+        <div className='navigation'>
+          <ul>
+            {categories.map((category) => (
+              <li key={category.title}>
+                <Link to={category.path}>{category.title}</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </nav>
   )
 }

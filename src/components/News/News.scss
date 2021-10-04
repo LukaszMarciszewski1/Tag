@@ -1,65 +1,72 @@
-@import '../../breakpoints/breakpoints.scss';
+@import '../../scss/utils.scss';
 
-.entries {
+.news {
   display: none;
   width: 100%;
   max-width: 100%;
-  background-color: #e08e33;
-  padding: 1.5rem;
+  background-color: $orange;
+  transform: translateY(80px);
   @include mq(desktop) {
-    max-width: 350px;
-    min-width: 350px;
-    margin-right: 3rem;
+    max-width: 400px;
+    min-width: 400px;
+    margin: 0 2.5rem;
     display: block;
   }
   .title {
     display: flex;
     align-items: center;
+    padding: 1.5rem 1.5rem .5rem;
     h2{
-      color: white;
+      color: $white;
     }
     .triangle {
       width: 0;
       height: 0;
       border-top: 12px solid transparent;
-      border-left: 22px solid white;
+      border-left: 22px solid $white;
       border-bottom: 12px solid transparent;
       padding-right: 10px;
       @include mq(tablet) {
         border-top: 16px solid transparent;
-        border-left: 26px solid white;
+        border-left: 26px solid $white;
         border-bottom: 16px solid transparent;
       }
       @include mq(desktop) {
         border-top: 12px solid transparent;
-        border-left: 22px solid white;
+        border-left: 22px solid $white;
         border-bottom: 12px solid transparent;
       }
     }
   }
-
   .content{
     margin-top: 1rem;
-    .entry{
-      color: white;
-      padding: 1.5rem 0;
-      border-bottom: 2px solid white;
+    .news-link{
+      color: $white;
+      padding: 1.2rem 1.5rem;
+      border-bottom: 1px solid $white;
+      cursor: pointer;
+      transition: .2s;
+      &:hover{
+        background-color: darken($orange, 7%);
+      }
       &:last-child{
-        padding:1rem 0 0;
         border-bottom: none;
       }
-      h4 {
-
+      a {
+        color: $white;
+        font-weight: bold;
         @include mq(desktop) {
-          font-size: 1rem;
-          line-height: 1.3rem;
+          font-size: 1.2rem;
+          line-height: 1.5rem;
         }
       }
       span{
         font-size: 1.05rem;
         padding-bottom: .5rem;
-        display: inline-block;
+        display: block;
+        font-weight: lighter;
         text-transform: uppercase;
+        color: $white;
         @include mq(desktop) {
           font-size: 1rem;
         }

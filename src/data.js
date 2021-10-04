@@ -47,7 +47,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img1.jpg',
+    img: '/img/img1.webp',
   },
   {
     id: 2,
@@ -55,7 +55,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 3,
@@ -63,7 +63,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 4,
@@ -71,7 +71,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 5,
@@ -79,7 +79,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img6.jpg',
+    img: '/img/img6.webp',
   },
   {
     id: 7,
@@ -95,7 +95,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img7.jpg',
+    img: '/img/img7.webp',
   },
   {
     id: 8,
@@ -103,7 +103,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img8.jpg',
+    img: '/img/img8.webp',
   },
   {
     id: 9,
@@ -111,7 +111,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 10,
@@ -119,7 +119,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 11,
@@ -127,7 +127,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 12,
@@ -135,7 +135,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 13,
@@ -143,7 +143,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img1.jpg',
+    img: '/img/img1.webp',
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 15,
@@ -159,7 +159,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 16,
@@ -167,7 +167,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 17,
@@ -175,7 +175,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 18,
@@ -183,7 +183,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img6.jpg',
+    img: '/img/img6.webp',
   },
   {
     id: 19,
@@ -191,7 +191,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img7.jpg',
+    img: '/img/img7.webp',
   },
   {
     id: 20,
@@ -199,7 +199,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img8.jpg',
+    img: '/img/img8.webp',
   },
   {
     id: 21,
@@ -207,7 +207,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 22,
@@ -215,7 +215,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 23,
@@ -223,7 +223,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 24,
@@ -231,7 +231,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 25,
@@ -239,7 +239,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img1.jpg',
+    img: '/img/img1.webp',
   },
   {
     id: 26,
@@ -247,7 +247,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 27,
@@ -255,7 +255,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 28,
@@ -263,7 +263,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 29,
@@ -271,7 +271,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 30,
@@ -279,7 +279,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img6.jpg',
+    img: '/img/img6.webp',
   },
   {
     id: 31,
@@ -287,7 +287,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img7.jpg',
+    img: '/img/img7.webp',
   },
   {
     id: 32,
@@ -295,7 +295,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img8.jpg',
+    img: '/img/img8.webp',
   },
   {
     id: 33,
@@ -303,7 +303,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 34,
@@ -311,7 +311,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 35,
@@ -319,7 +319,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 36,
@@ -327,7 +327,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 37,
@@ -335,7 +335,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img1.jpg',
+    img: '/img/img1.webp',
   },
   {
     id: 38,
@@ -343,7 +343,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 39,
@@ -351,7 +351,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 40,
@@ -359,7 +359,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 41,
@@ -367,7 +367,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 42,
@@ -375,7 +375,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img6.jpg',
+    img: '/img/img6.webp',
   },
   {
     id: 43,
@@ -383,7 +383,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img7.jpg',
+    img: '/img/img7.webp',
   },
   {
     id: 44,
@@ -391,7 +391,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img8.jpg',
+    img: '/img/img8.webp',
   },
   {
     id: 45,
@@ -399,7 +399,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 46,
@@ -407,7 +407,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 47,
@@ -415,7 +415,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 48,
@@ -423,7 +423,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 49,
@@ -431,7 +431,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img1.jpg',
+    img: '/img/img1.webp',
   },
   {
     id: 50,
@@ -439,7 +439,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 51,
@@ -447,7 +447,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 52,
@@ -455,7 +455,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 53,
@@ -463,7 +463,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
   {
     id: 54,
@@ -471,7 +471,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img6.jpg',
+    img: '/img/img6.webp',
   },
   {
     id: 55,
@@ -479,7 +479,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img7.jpg',
+    img: '/img/img7.webp',
   },
   {
     id: 56,
@@ -487,7 +487,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img8.jpg',
+    img: '/img/img8.webp',
   },
   {
     id: 57,
@@ -495,7 +495,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img4.jpg',
+    img: '/img/img4.webp',
   },
   {
     id: 58,
@@ -503,7 +503,7 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img2.jpg',
+    img: '/img/img2.webp',
   },
   {
     id: 59,
@@ -511,7 +511,7 @@ export const data = [
     title:
       'Francuski raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img3.jpg',
+    img: '/img/img3.webp',
   },
   {
     id: 60,
@@ -519,6 +519,6 @@ export const data = [
     title:
       'Hiszpański raport wojskowy przewiduje dwie nowe fale pandemii koronawirusa',
     body: 'Raport hiszpańskich wojsk lądowych przewiduje dwie nowe fale pandemii koronawirusa do 2022 r. Zgodnie z raportem społeczeństwo nigdy nie nabędzie „stuprocentowej odporności” na SARS-CoV-2, a ryzyko zakażenia będzie największe w dużych miastach.',
-    img: '/img/img5.jpg',
+    img: '/img/img5.webp',
   },
 ]

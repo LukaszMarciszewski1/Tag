@@ -9,6 +9,7 @@
   align-items: center;
   transform: translateY(-2px);
   background-color: $white;
+  overflow: hidden;
   @include mq(tablet) {
     padding: 3rem 1rem;
   }

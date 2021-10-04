@@ -5,7 +5,10 @@
   width: 100%;
   background-color: $dark-grey;
   color: $white;
-  margin-top: 20px;
+  margin-top: 40px;
+  @include mq(desktop) {
+    margin-top: 100px;
+  }
   .top-box{
     padding: 1.5rem;
     @include mq(desktop) {
@@ -114,6 +117,9 @@
       display: flex;
       font-size: 13px;
       @include mq(tablet) {
+        font-size: 14px;
+      }
+      @include mq(desktop) {
         font-size: 1rem;
       }
       li{

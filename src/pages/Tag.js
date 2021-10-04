@@ -1,4 +1,5 @@
 import React, { useContext, useState } from 'react'
+import { useLocation } from "react-router-dom";
 import { ContextPosts } from '../context/ContextPosts'
 import TitleText from '../components/TitleText/TitleText'
 import Posts from '../components/Posts/Posts'
@@ -16,7 +17,11 @@ const Tag = () => {
   const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost)
 
   const changePage = ({ selected }) => {
+    const element = document.querySelector('.titleWraper')
+    const hight = element.clientHeight
+    
     setCurrentPage(selected + 1)
+    window.scrollTo(0, hight);
   }
 
   return (
